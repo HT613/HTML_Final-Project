@@ -1,0 +1,155 @@
+/* See previous labs for css styling examples. */
+::selection {
+  background: black;
+  color: yellow;
+}
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+#main-nav {
+  float: left;
+  width: 100%;
+  background-color: #E4080A;
+  opacity: 0.5;
+}
+#main-nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+#main-nav ul li a {
+  padding: 10px 50px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-style: double;
+}
+#main-nav ul li a:hover {
+  background-color: #EC4748; /* This code is borrowed from lab 6. If it works, why reinvent the wheel? */
+  color: white;
+}
+.centered-content {
+  text-align: center;
+}
+.boxed-content {
+  border: 3px solid black;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+}
+.boxed-content ul li {
+  list-style-type: none;
+}
+body {
+  display: block;
+  background-color: #ffd99c;
+  border-style: groove;
+  padding: 5px;
+}
+#marmots {
+  background-color: #d1fca3;
+}
+#resume {
+  background-color: #f7f7f7;
+  display: block;
+  max-width: 1000px;
+  margin: auto;
+}
+h6 {
+  text-align: center;
+}
+p {
+  font-family: "Lato", "Helvetica Neue", "Arial", sans-serif; /* Changed backup font to actual fonts */
+  font-style: normal;
+}
+.about-me {
+  color: black;
+  padding: 5px;
+}
+.marmot-facts {
+  font-family: "Times New Roman", "Georgia", serif; /* Added Georgia as a backup */
+  font-weight: bold;
+  padding: 5px;
+}
+.marmot-facts a {
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid green;
+  display: block;
+  margin: auto;
+  float: none;
+  padding: 20px;
+}
+.lato-thin {
+  font-family: "Lato", "Helvetica Neue", "Arial", sans-serif; /* Changed backup font */
+  font-weight: 100;
+  font-style: normal;
+}
+.lato-regular {
+  font-family: "Lato", "Helvetica Neue", "Arial", sans-serif; /* Changed backup font */
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  position: relative;
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px dotted black;
+  transition: transform 0.5s ease; /* Add transition for smooth scaling */
+}
+
+.container:hover img {
+  opacity: 0.7; /* Make the image semi-transparent on hover */
+}
+
+.overlay {
+  border: 5px solid black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #57CEB8; /* Semi-transparent overlay */
+  border-radius: 50%; /* Match the border radius of the image */
+  display: flex; /* Center text */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  color: white; /* Text color */
+}
+
+.container:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+#video {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 500px;
+}
+#marmots-banner {
+  border-radius: 8px;
+}
+#marmots-banner:hover {
+  transform: scale(1.1);
+}
