@@ -8,18 +8,18 @@ function init() {
   const { Map } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-  // The map, centered at Uluru
+  // The map
   map = new Map(document.getElementById("map"), {
     zoom: 4,
     center: position,
-    mapId: "DEMO_MAP_ID",
+    mapId: "Ho Chi Minh City",
   });
 
-  // The marker, positioned at Uluru
+  // The marker
   const marker = new AdvancedMarkerElement({
     map: map,
     position: position,
-    title: "Uluru",
+    title: "Ho Chi Minh City",
   });
   }
 
