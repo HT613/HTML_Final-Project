@@ -45,28 +45,33 @@
 .boxed-content ul li {
   list-style-type: none;
 }
+/*This is for the default, for phones.*/
+body {
+  display: block;
+  background-color: #F61AF6;
+  border-style: groove;
+  padding: 5px;
+}
+/*This is for viewing tablets.*/
 @media only screen and (min-width: 600px){
   body {
     display: block;
     background-color: #1A8FF6;
     border-style: dotted;
     padding: 1px;
+    margin: auto;
   }
 }
-@media only screen and (min-width: 1080px) {
+/*This is for viewing desktops.*/
+@media only screen and (min-width: 992px) {
   body {
     display: block;
-    background-color: #F61AF6;
+    background-color: #ffd99c;
     border-style: dotted;
     padding: 10px;
   }
 }
-body {
-  display: block;
-  background-color: #ffd99c;
-  border-style: groove;
-  padding: 5px;
-}
+
 #marmots {
   background-color: #d1fca3;
 }
