@@ -1,19 +1,14 @@
-function init(){
-//add your javascript between these two lines of code
-  var map = new google.maps.Map(DOM element, options);
-  
-  
-  var button = document.getElementById("entrybutton");
- 
-
-  function changeText() {
-    var textbox = document.getElementById("entryinput");
-    document.getElementById("textoutput").innerHTML = textbox.value;
-    alert("Henry Tran: " + textbox.value);
+function init() {
+  // Add your JavaScript between these two lines of code
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 50, lng: 50 }, 
+      zoom: 8 
+    });
   }
 
-
-  button.addEventListener("click", changeText);
+  // Call the function to initialize the map
+  initMap();
 }
 
 window.addEventListener("load", init);
