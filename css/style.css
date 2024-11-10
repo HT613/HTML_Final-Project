@@ -157,7 +157,28 @@ img {
   align-items: center; /* Center vertically */
   color: white; /* Text color */
 }
-
+@media only screen and (min-width: 600px) {
+  .overlay {
+    border: 5px solid black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #57CEB8; /* Semi-transparent overlay */
+    border-radius: 50%; /* Match the border radius of the image */
+    display: flex; /* Center text */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Text color */
+  }
+}
 .container:hover .overlay {
   opacity: 1; /* Show overlay on hover */
 }
