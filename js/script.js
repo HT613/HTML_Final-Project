@@ -1,14 +1,29 @@
 function init() {
   // Add your JavaScript between these two lines of code
-  function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 50, lng: 50 }, 
-      zoom: 8 
-    });
+  async function initMap() {
+  // The location of Uluru
+  const position = {lat: 10.82302, lng: 106.62965};
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Uluru
+  map = new Map(document.getElementById("map"), {
+    zoom: 4,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
+
+  // The marker, positioned at Uluru
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "Uluru",
+  });
   }
 
-  // Call the function to initialize the map
   initMap();
-}
+  }
 
 window.addEventListener("load", init);

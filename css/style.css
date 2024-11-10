@@ -225,11 +225,9 @@ p {
   padding-bottom: 20px;
 }
 img {
-  border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 5px dotted black;
   transition: transform 0.5s ease; /* Add transition for smooth scaling */
 }
 
