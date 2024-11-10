@@ -56,9 +56,20 @@ body {
 @media only screen and (min-width: 992px) {
   body {
     display: block;
-    background-color: #F61AF6;
     border-style: groove;
     padding: 10px;
+    /* Additional styles */
+    font-size: 18px;            /* Increase font size */
+    color: #333;                /* Change font color */
+    line-height: 1.6;           /* Adjust line height */
+    letter-spacing: 0.5px;      /* Increase letter spacing */
+    text-align: justify;        /* Change text alignment */
+  }
+  #marmots {
+    display: block;
+    border-style: groove;
+    padding: 10px;
+    background-color: #d1fca3;
     /* Additional styles */
     font-size: 18px;            /* Increase font size */
     color: #333;                /* Change font color */
@@ -71,12 +82,24 @@ body {
 
 /* Mobile-friendly styles for screen widths less than 600px */
 @media only screen and (max-width: 600px) {
+  #marmots {
+    display: block;
+    border-style: groove;
+    padding: 10px;
+    background-color: #d1fca3;
+    /* Additional styles */
+    font-size: 18px;            /* Increase font size */
+    color: #333;                /* Change font color */
+    line-height: 1.6;           /* Adjust line height */
+    letter-spacing: 0.5px;      /* Increase letter spacing */
+    text-align: justify;        /* Change text alignment */
+  }
+  
   #mobile-page body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F61AF6;
     border: 3px groove #333;
     border-radius: 10px;
     padding: 10px 20px;
