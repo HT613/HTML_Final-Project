@@ -1,5 +1,8 @@
 function init(){
 //add your javascript between these two lines of code
+  var map = new google.maps.Map(DOM element, options);
+  
+  
   var button = document.getElementById("entrybutton");
  
 

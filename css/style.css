@@ -45,12 +45,20 @@
 .boxed-content ul li {
   list-style-type: none;
 }
-@media only screen and (min-width: 600){
+@media only screen and (min-width: 600px){
   body {
     display: block;
-    background-color: #ffd99c;
+    background-color: #1A8FF6;
     border-style: dotted;
-    padding: 0px;
+    padding: 1px;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  body {
+    display: block;
+    background-color: #F61AF6;
+    border-style: dotted;
+    padding: 10px;
   }
 }
 body {
