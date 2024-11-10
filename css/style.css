@@ -45,39 +45,98 @@
 .boxed-content ul li {
   list-style-type: none;
 }
-/*This is for the default, for phones.*/
+/*This is for the default.*/
 body {
   display: block;
   background-color: #F61AF6;
   border-style: groove;
   padding: 5px;
 }
-/*This is for viewing tablets.*/
-@media only screen and (min-width: 600px){
-  body {
-    display: block;
-    background-color: #1A8FF6;
-    border-style: groove;
-    padding: 1px;
-    margin: auto;
-  }
-}
 /*This is for viewing desktops.*/
 @media only screen and (min-width: 992px) {
   body {
     display: block;
-    background-color: #ffd99c;
+    background-color: #F61AF6;
     border-style: groove;
     padding: 10px;
   }
 }
-@media only screen and (min-width: 600px) {
-  #mobile-friendly body {
-    display: block;
+
+/* Mobile-friendly styles for screen widths less than 600px */
+@media only screen and (max-width: 600px) {
+  #mobile-page body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #F61AF6;
-    border-style: groove;
-    padding: 5px;
+    border: 3px groove #333;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.2s ease-in-out both;
   }
+
+  #mobile-page h1 {
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    margin: 0.5em 0;
+    text-align: center;
+  }
+
+  #mobile-page p {
+    color: #fefefe;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  a {
+    color: #F61AF6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  #main-nav {
+    width: 100%;
+    background-color: #F61AF6;
+    opacity: 0.9; /* Higher opacity for better readability */
+  }
+
+  #main-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly horizontally */
+  }
+
+  #main-nav ul li {
+    float: none; /* Override float to ensure proper horizontal alignment */
+  }
+
+  #main-nav ul li a {
+    padding: 8px 20px; /* Adjust padding to reduce size for smaller screens */
+    font-size: 0.9rem; /* Smaller font size for better fit */
+    border-style: solid;
+    text-align: center;
+  }
+
+  #main-nav ul li a:hover {
+    background-color: #EC4748;
+  }
+
+  img {
+    display: block;
+    height: 50%;
+    width: 50%;
+    max-height: 300px;
+    max-width: 300px;
+  }
+}
+
 }
 #marmots {
   background-color: #d1fca3;
@@ -164,28 +223,7 @@ img {
   align-items: center; /* Center vertically */
   color: white; /* Text color */
 }
-@media only screen and (min-width: 600px) {
-  .overlay {
-    border: 5px solid black;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #57CEB8; /* Semi-transparent overlay */
-    border-radius: 50%; /* Match the border radius of the image */
-    display: flex; /* Center text */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    color: white; /* Text color */
-  }
-}
+
 .container:hover .overlay {
   opacity: 1; /* Show overlay on hover */
 }
