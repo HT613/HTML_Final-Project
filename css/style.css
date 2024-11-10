@@ -59,8 +59,15 @@ body {
     background-color: #F61AF6;
     border-style: groove;
     padding: 10px;
+    /* Additional styles */
+    font-size: 18px;            /* Increase font size */
+    color: #333;                /* Change font color */
+    line-height: 1.6;           /* Adjust line height */
+    letter-spacing: 0.5px;      /* Increase letter spacing */
+    text-align: justify;        /* Change text alignment */
   }
 }
+
 
 /* Mobile-friendly styles for screen widths less than 600px */
 @media only screen and (max-width: 600px) {
@@ -95,7 +102,7 @@ body {
     margin: 10px 0;
   }
 
-  a {
+  #mobile-page a {
     color: #F61AF6;
     text-decoration: none;
     font-weight: bold;
