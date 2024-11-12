@@ -12,7 +12,7 @@ function init() {
   map = new Map(document.getElementById("map"), {
     zoom: 4,
     center: position,
-    mapId: "Ho Chi Minh City", //Unsure if this is correct syntax
+    mapId: "132d2c10ae6d07f5", //Unsure if this is correct syntax
   });
 
   // The marker
