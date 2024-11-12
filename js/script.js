@@ -5,7 +5,7 @@ function init() {
   const position = {lat: 10.82302, lng: 106.62965};
   // Request needed libraries.
   //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
+  const { Map } = await google.maps.importLibrary("maps"); //UnCaught Reference Error, google not defined.
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
   // The map
@@ -47,7 +47,7 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none"; // HOW DO I FIX THIS?? PLEASE HELP!! This is UnCaught Type Error. 
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
