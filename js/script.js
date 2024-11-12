@@ -12,7 +12,7 @@ function init() {
   map = new Map(document.getElementById("map"), {
     zoom: 4,
     center: position,
-    mapId: "Ho Chi Minh City",
+    mapId: "Ho Chi Minh City", //Unsure if this is correct syntax
   });
 
   // The marker
@@ -25,8 +25,10 @@ function init() {
   // Still need to implement extra features and photo slider...
   initMap();
 }
+
+window.addEventListener("load", init);
   
-  // This code is for the photo slider...
+// This code is for the photo slider...
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -56,4 +58,4 @@ function showSlides(n) {
   
   
 
-window.addEventListener("load", init);
+
